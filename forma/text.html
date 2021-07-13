@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Forma</h2>
+        <legend>Registracija</legend>
+    </header>
+    <form action="">
+        <fieldset class="form-1">
+
+            <label for="name">Vardas</label>
+            <input type="text">
+            <label for="surname">Pavarde</label>
+            <input type="text">
+            <label for="email">El.Pastas</label>
+            <input type="text">
+            <label for="telephone">Telefono Nr</label>
+            <input type="text">
+        </fieldset>
+
+        <fieldset class="form-2">
+            <h2>Galimi pasirinkimai</h2>
+            <input type="text" list="Paslaugos">
+            <datalist id="Paslaugos">
+                <option value="automobilio nuoma">
+                </option>
+                <option value="dviracio nuoma">
+                </option>
+                <option value="paspirtuko nuoma"></option>
+            </datalist>
+        </fieldset>
+
+        <fieldset class="form-3">
+            <label for="yes_no_varuotojo pazymejimas">Ar turite vairuotojo pazymejima?</label>
+            <p>
+                <input type="radio" id="vairuotojo-pazymejimas-taip" name="vairuotojo-pazymejimas" value="taip"></input>
+                <label for="vairuotojo-pazymejimas">Taip</label> <br>
+
+                <input type="radio" id="vairuotojo-pazymejimas-ne" name="vairuotojo-pazymejimas" value="ne"></input>
+                <label for="vairuotojo-pavymejimas">Ne</label> <br>
+            <div class="check">
+                <input type="checkbox" id="transporto-priemone-a" name="transporto-priemone" value="A">
+                <label for="transporto-priemone">A</label><br>
+                <input type="checkbox" id="transporto-priemone-b" name="transporto-priemone" value="B">
+                <label for="transporto-priemone">B</label><br>
+                <input type="checkbox" id="transporto-priemone-c" name="transporto-priemone" value="C">
+                <label for="transporto-priemone">C</label><br><br>
+                <input type="checkbox" id="transporto-priemone-d" name="transporto-priemone" value="BE">
+                <label for="transporto-priemone">BE</label><br><br>
+                <input type="checkbox" id="transporto-priemone-e" name="transporto-priemone" value="CE">
+                <label for="transporto-priemone">CE</label><br><br>
+                <input type="submit" value="Submit">
+
+            </div>
+            </p>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

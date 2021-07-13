@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    margin: 1.5em 1em;
+}
+
+.year {
+    margin: 0.5em 1em;
+    padding: 1em;
+    background-color: lightyellow;
+}
+
+.year h3 {
+    color: gray;
+    margin-bottom: .5em;
+}
+
+.year p {
+    font-size: 12pt;
+}
+
+.animal-fact {
+    margin: 1.5em;
+    font-style: italic;
+}

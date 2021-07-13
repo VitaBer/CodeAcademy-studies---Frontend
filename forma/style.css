@@ -1,0 +1,26 @@
+fieldset {
+    background-color: blue;
+    padding: 3em 3em;
+    display: grid;
+}
+
+label , input {
+  text-align: center;  
+  margin-left: 0em auto; 
+}
+
+
+#wrapper
+{
+  border: 1px solid #888;
+  display: inline-block;
+  padding:20px;
+  
+}
+.check {
+    display: none;
+}
+
+#vairuotojo-pazymejimas-taip:checked +.check {
+    display: block;
+}

@@ -1,0 +1,101 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* Variables */
+:root {
+  --primary-dark-color: #222;
+  --secondary-dark-color: #444;
+  --primary-light-color: #fff;
+}
+
+/* MOBILE FIRST */
+/* -- calculator */
+.calculator-wrapper {
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-dark-color);
+}
+
+.calculator {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- calculator output */
+.calculator__output {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: var(--primary-light-color);
+}
+
+#previous-number {
+  height: 30px;
+  color: var(--primary-dark-color);
+  font-size: 1.5rem;
+}
+
+#current-number {
+  height: 30px;
+  color: var(--primary-dark-color);
+  font-size: 2.5rem;
+}
+
+/* calculator buttons */
+.calculator__buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 25%;
+  height: 75px;
+  border: 1px solid var(--primary-light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-dark-color);
+  font-size: 2rem;
+  color: var(--primary-light-color);
+  cursor: pointer;
+}
+
+.btn-lg {
+  width: 50%;
+}
+
+.btn:hover {
+  background-color: var(--primary-light-color);
+  color: var(--primary-dark-color);
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .calculator {
+    width: 50%;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .calculator {
+    width: 30%;
+  }
+}
